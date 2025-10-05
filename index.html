@@ -1,0 +1,247 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROMIDA AA ENTERPRISE   — Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small visual polish */
+    .gradient-hero { background: linear-gradient(135deg,#0ea5a4 0%,#7c3aed 100%);} 
+    .glass { backdrop-filter: blur(6px); background: rgba(255,255,255,0.06); }
+  </style>
+</head>
+<body class="antialiased text-gray-100 bg-gray-900">
+  <!-- NAV -->
+  <header class="fixed w-full z-40 bg-orange-400">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-2xl font-bold">SP</div>
+        <div>
+          <div class="text-white font-semibold">Romida AA Enterprise </div>
+          <div class="text-xs text-gray-300">Uganda — Kampala</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#listings" class="hover:underline">Listings</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="https://wa.me/256705975795" class="ml-4 inline-block px-4 py-2 rounded-lg bg-green-500 text-gray-900 font-semibold">WhatsApp Us</a>
+      </nav><button id="mobileBtn" class="md:hidden p-2 rounded-lg glass">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
+</div>
+
+  </header>  <!-- MOBILE NAV -->  <div id="mobileNav" class="fixed inset-0 bg-black/60 hidden z-30">
+    <div class="bg-gray-800 max-w-sm w-full h-full p-6">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-2xl font-bold">RAA</div>
+          <div>
+            <div class="text-white font-semibold">Romida AA Enterprise </div>
+            <div class="text-xs text-gray-300">Kampala</div>
+          </div>
+        </div>
+        <button id="closeMobile" class="p-2">✕</button>
+      </div>
+      <nav class="flex flex-col gap-4 text-gray-200">
+        <a href="#services" class="py-2">Services</a>
+        <a href="#listings" class="py-2">Listings</a>
+        <a href="#about" class="py-2">About</a>
+        <a href="#contact" class="py-2">Contact</a>
+        <a href="https://wa.me/256705975795" class="mt-4 inline-block px-4 py-2 rounded-lg bg-green-500 text-gray-900 font-semibold">WhatsApp Us</a>
+      </nav>
+    </div>
+  </div>  <!-- HERO -->  <section class="gradient-hero pt-28 pb-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Romida AA Enterprise</h1>
+        <p class="mt-4 text-gray-200 max-w-xl">Trusted property  Consultants in Kampala — find houses for rent, buy land & houses, get professional property maintenance and secure land documentation services. Make property simple.</p><div class="mt-6 flex gap-3">
+      <a href="https://wa.me/256705975795" class="px-5 py-3 rounded-lg bg-white text-gray-900 font-semibold shadow hover:opacity-95">Chat on WhatsApp</a>
+      <a href="#listings" class="px-5 py-3 rounded-lg glass border border-white/10">View Listings</a>
+    </div>
+
+    <div class="mt-6 grid grid-cols-3 gap-2 text-xs text-gray-300">
+      <div class="text-center">
+        <div class="font-bold text-white">200+</div>
+        <div>Properties Listed</div>
+      </div>
+      <div class="text-center">
+        <div class="font-bold text-white">500+</div>
+        <div>Happy Clients</div>
+      </div>
+      <div class="text-center">
+        <div class="font-bold text-white">10+</div>
+        <div>Years Experience</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rounded-xl overflow-hidden shadow-lg bg-white/5 p-4">
+    <img src="https://images.unsplash.com/photo-1560184897-6e4f6a62b2b2?auto=format&fit=crop&w=900&q=60" alt="property" class="w-full h-64 object-cover rounded-lg" />
+    <div class="mt-4 grid grid-cols-2 gap-3">
+      <div class="p-3 bg-white/6 rounded-lg">
+        <div class="text-xs text-gray-300">Featured</div>
+        <div class="font-semibold mt-2">3-bedroom house — Naguru</div>
+        <div class="text-sm text-gray-300 mt-2">Rent: UGX 700,000/month</div>
+      </div>
+      <div class="p-3 bg-white/6 rounded-lg">
+        <div class="text-xs text-gray-300">Hot</div>
+        <div class="font-semibold mt-2">Plot 50x100 — Kira</div>
+        <div class="text-sm text-gray-300 mt-2">Price: UGX 55,000,000</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>  <!-- SERVICES -->  <section id="services" class="py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold">Our Services</h2>
+      <p class="text-gray-300 mt-2 max-w-2xl">We help property owners, tenants and buyers with affordable and reliable property solutions across Kampala and nearby districts.</p><div class="mt-8 grid md:grid-cols-4 gap-6">
+    <div class="p-6 bg-white/5 rounded-xl">
+      <div class="font-semibold text-lg">Houses for Rent</div>
+      <p class="text-sm text-gray-300 mt-2">Find well-maintained rentals in secure neighbourhoods. Shortlist, view and move in quickly.</p>
+    </div>
+    <div class="p-6 bg-white/5 rounded-xl">
+      <div class="font-semibold text-lg">Houses & Land for Sale</div>
+      <p class="text-sm text-gray-300 mt-2">Verified land and houses — clear documentation, fair negotiation and fast processing.</p>
+    </div>
+    <div class="p-6 bg-white/5 rounded-xl">
+      <div class="font-semibold text-lg">Property Maintenance</div>
+      <p class="text-sm text-gray-300 mt-2">Reliable maintenance services — plumbing, electrical, painting and general upkeep.</p>
+    </div>
+    <div class="p-6 bg-white/5 rounded-xl">
+      <div class="font-semibold text-lg">Land Documentation</div>
+      <p class="text-sm text-gray-300 mt-2">We assist with surveys, title searches and legal documentation for secure land transfers.</p>
+    </div>
+  </div>
+</div>
+
+  </section>  <!-- LISTINGS -->  <section id="listings" class="py-14 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-bold">Featured Listings</h3>
+        <a href="#contact" class="text-sm text-gray-300 underline">Request more details</a>
+      </div><div class="mt-6 grid md:grid-cols-3 gap-6">
+    <!-- Card 1 -->
+    <div class="bg-white/5 rounded-xl overflow-hidden shadow">
+      <img src="https://images.unsplash.com/photo-1600607686017-5b3c3a9c6b2b?auto=format&fit=crop&w=900&q=60" class="w-full h-44 object-cover" />
+      <div class="p-4">
+        <div class="font-semibold">2-Bed Apartment — Ntinda</div>
+        <div class="text-sm text-gray-300 mt-2">Rent: UGX 800,000/month · Furnished</div>
+        <div class="mt-3 flex gap-2">
+          <button class="flex-1 py-2 rounded-lg glass" onclick="showContact('2-Bed Apartment — Ntinda')">Enquire</button>
+          <a href="https://wa.me/256705975795" class="py-2 px-4 rounded-lg bg-green-500 text-gray-900 font-semibold">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="bg-white/5 rounded-xl overflow-hidden shadow">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=60" class="w-full h-44 object-cover" />
+      <div class="p-4">
+        <div class="font-semibold">Plot 50x100 — Kira</div>
+        <div class="text-sm text-gray-300 mt-2">Price: UGX 55,000,000 · Clear Title</div>
+        <div class="mt-3 flex gap-2">
+          <button class="flex-1 py-2 rounded-lg glass" onclick="showContact('Plot 50x100 — Kira')">Enquire</button>
+          <a href="https://wa.me/256705975795" class="py-2 px-4 rounded-lg bg-green-500 text-gray-900 font-semibold">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="bg-white/5 rounded-xl overflow-hidden shadow">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=60" class="w-full h-44 object-cover" />
+      <div class="p-4">
+        <div class="font-semibold">3-Bed House — Naguru</div>
+        <div class="text-sm text-gray-300 mt-2">Rent: UGX 700,000/month · Secure compound</div>
+        <div class="mt-3 flex gap-2">
+          <button class="flex-1 py-2 rounded-lg glass" onclick="showContact('3-Bed House — Naguru')">Enquire</button>
+          <a href="https://wa.me/256705975795" class="py-2 px-4 rounded-lg bg-green-500 text-gray-900 font-semibold">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>  <!-- ABOUT -->  <section id="about" class="py-14">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold">About Romida AA Enterprise   </h3>
+      <p class="mt-4 text-gray-300">Romida AA Enterprise  Ugandaprovides end-to-end property solutions across Kampala. From matching tenants to homes, guiding land buyers through documentation, to offering reliable maintenance services — we make property simple and secure.</p><div class="mt-6 flex flex-col md:flex-row gap-4 justify-center">
+    <div class="p-4 bg-white/5 rounded-lg">
+      <div class="font-semibold">Verified Listings</div>
+      <div class="text-sm text-gray-300 mt-1">Every property is verified before listing.</div>
+    </div>
+    <div class="p-4 bg-white/5 rounded-lg">
+      <div class="font-semibold">Transparent Pricing</div>
+      <div class="text-sm text-gray-300 mt-1">No hidden fees — everything explained clearly.</div>
+    </div>
+    <div class="p-4 bg-white/5 rounded-lg">
+      <div class="font-semibold">Fast Documentation</div>
+      <div class="text-sm text-gray-300 mt-1">We help with surveys and title checks to speed up sales.</div>
+    </div>
+  </div>
+</div>
+
+  </section>  <!-- CONTACT -->
+  <section id="contact" class="py-14 bg-gradient-to-b from-gray-900 to-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-bold">Get in Touch</h3>
+      <p class="text-gray-300 mt-2">Ready to list a property or need help with documentation? Contact us through any of the channels below and we'll respond quickly.</p><div class="mt-6 grid md:grid-cols-2 gap-6">
+    <div class="p-6 bg-white/5 rounded-xl">
+      <div class="font-semibold">WhatsApp</div>
+      <a href="https://wa.me/256 777 6731" class="block mt-2 text-green-400">+256 777 6731</a>
+
+      <div class="font-semibold mt-4">Email</div>
+      <div class="text-gray-300 mt-2">info@romidaaaenterprise.com</div>
+
+      <div class="font-semibold mt-4">Social</div>
+      <div class="flex gap-3 mt-2">
+        <a href="#" class="text-gray-300 underline">Facebook</a>
+        <a href="#" class="text-gray-300 underline">Instagram</a>
+      </div>
+    </div>
+
+    <div class="p-6 bg-white/5 rounded-xl">
+      <form id="contactForm" onsubmit="submitForm(event)">
+        <label class="block text-sm text-gray-300">Your name</label>
+        <input required class="mt-1 w-full p-2 rounded bg-white/5" id="name" />
+        <label class="block text-sm text-gray-300 mt-3">Message</label>
+        <textarea required class="mt-1 w-full p-2 rounded bg-white/5" id="message"></textarea>
+        <div class="mt-4 flex gap-3">
+          <button type="submit" class="px-4 py-2 rounded bg-green-500 text-gray-900 font-semibold">Send Message</button>
+          <a href="https://wa.me/2567776731" class="px-4 py-2 rounded glass">Chat on WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  </section> 
+  <footer class="py-6 text-center text-gray-400">
+    © Romida AA Enterprise  Uganda— Demo • Kampala
+  </footer>  <script>
+    // Mobile nav toggles
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeMobile = document.getElementById('closeMobile');
+    mobileBtn && mobileBtn.addEventListener('click', ()=> mobileNav.classList.remove('hidden'));
+    closeMobile && closeMobile.addEventListener('click', ()=> mobileNav.classList.add('hidden'));
+
+    function showContact(title){
+      const name = prompt('Enter your name so we can send your enquiry for: ' + title);
+      if(!name) return alert('Name required');
+      const url = 'https://wa.me/256705975795?text=' + encodeURIComponent('Hello, I am ' + name + ' and I am enquiring about: ' + title);
+      window.open(url, '_blank');
+    }
+
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name || !message) return alert('Please fill all fields');
+      const url = 'https://wa.me/256705975795?text=' + encodeURIComponent('Contact from site - ' + name + ': ' + message);
+      window.open(url, '_blank');
+    }
+  </script></body>
+</html>
